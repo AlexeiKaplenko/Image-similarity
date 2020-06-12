@@ -8,10 +8,6 @@ def fit(train_loader, val_loader, model, loss_fn, optimizer, scheduler, n_epochs
     Loaders, model, loss function and metrics should work together for a given task,
     i.e. The model should be able to process data output of loaders,
     loss function should process target output of loaders and outputs from the model
-
-    Examples: Classification: batch loader, classification model, NLL loss, accuracy metric
-    Siamese network: Siamese loader, siamese model, contrastive loss
-    Online triplet learning: batch loader, embedding model, online triplet loss
     """
     for epoch in range(0, start_epoch):
         scheduler.step()
