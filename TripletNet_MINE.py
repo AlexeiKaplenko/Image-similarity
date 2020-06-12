@@ -17,7 +17,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 
 from losses import TripletLoss, TripletLoss_log1p, TripletLoss_64_patches
-from networks import EmbeddingNet_MINE, EmbeddingNet, TripletNet, TripletNet_MINE, MNAS_Net, MNAS_Net_transformed, ClassificationNet, SiameseNet_MINE
+from networks import EmbeddingNet_MINE, TripletNet_MINE, MNAS_Net, MNAS_Net_transformed, SiameseNet_MINE
 from metrics import AccumulatedAccuracyMetric
 
 margin = 1.
