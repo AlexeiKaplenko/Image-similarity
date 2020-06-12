@@ -16,7 +16,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 
 from losses import TripletLoss
-from networks import EmbeddingNet_MINE, EmbeddingNet, TripletNet, MNAS_Net, MNAS_Net_transformed, ClassificationNet, SiameseNet_MINE
+from networks import EmbeddingNet_MINE, TripletNet_MINE, MNAS_Net, MNAS_Net_transformed, SiameseNet_MINE
 from metrics import AccumulatedAccuracyMetric
 
 cuda = torch.cuda.is_available()
