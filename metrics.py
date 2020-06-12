@@ -1,23 +1,5 @@
 import numpy as np
 
-
-class Metric:
-    def __init__(self):
-        pass
-
-    def __call__(self, outputs, target, loss):
-        raise NotImplementedError
-
-    def reset(self):
-        raise NotImplementedError
-
-    def value(self):
-        raise NotImplementedError
-
-    def name(self):
-        raise NotImplementedError
-
-
 class AccumulatedAccuracyMetric(Metric):
     """
     Works with classification model
